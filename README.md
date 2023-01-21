@@ -11,7 +11,7 @@ A CLI tool to reorient your movies directory, by sorting all movies as per genre
 
 - Find your movies sorted inside "sorted_movies" folder
 
-## NOTE
+### NOTE
 
 - Movie release date in movie-folder/movie-name is ESSENTIAL for algorithm to work and sort movies.
 - Keep the movies folder name in example formats like :
@@ -23,3 +23,14 @@ A CLI tool to reorient your movies directory, by sorting all movies as per genre
             
 - In case movie doesn't get sorted, try to rename the folder in style of folder names mentioned above.
 - For customisation, check `src/lib/detail.js` and change the regex according to your need.
+
+### In action
+
+417 GB worth movies sorted !!
+
+![MoZORT_AtWork](https://user-images.githubusercontent.com/57267960/213862352-35985f5c-f74b-4980-b876-645d13881490.png)
+
+More multimedia
+
+[MoZORT.webm](https://user-images.githubusercontent.com/57267960/213862394-db0cddf2-af0c-46a9-bab3-d6a1844a4e56.webm)
+
