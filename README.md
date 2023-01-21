@@ -1,4 +1,4 @@
-# MoZORT
+# MoZORT - The Movies Sorter
 
 A CLI tool to reorient your movies directory, by sorting all movies as per genre into separate folders, so that you can choose which movie to watch next time as per your mood, faster.
 
