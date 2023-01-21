@@ -3,7 +3,7 @@
 A CLI tool to reorient your movies directory, by sorting all movies as per genre into separate folders, so that you can choose which movie to watch next time as per your mood, faster.
 
 - Download this repository, 
-- Add required dependencies (added below), 
+- Add required dependencies [(added below)](#DEPENDENCIES), 
 - Place it one step, outside your movies directory,
 
             if `target` is folder containing movies
@@ -45,3 +45,7 @@ More multimedia
 
 [MoZORT.webm](https://user-images.githubusercontent.com/57267960/213862394-db0cddf2-af0c-46a9-bab3-d6a1844a4e56.webm)
 
+## DEPENDENCIES
+
+- [Node.js](https://nodejs.org/en/download/)
+- A terminal to execute commands.
