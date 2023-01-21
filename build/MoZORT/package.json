@@ -1,0 +1,16 @@
+{
+  "name": "movie-sorter",
+  "version": "1.0.0",
+  "description": "sort movies according to genre in folders",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "1502shivam-singh",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fs-extra": "^11.1.0"
+  }
+}
