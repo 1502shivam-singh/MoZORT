@@ -11,6 +11,8 @@ A CLI tool to reorient your movies directory, by sorting all movies as per genre
 
 - Find your movies sorted inside "sorted_movies" folder
 
+For a test run, hit `node main.js ./target` in this repo, after downloading and setting up for headstart.
+
 ## NOTE
 
 - Movie release date in movie-folder/movie-name is ESSENTIAL for algorithm to work and sort movies.
