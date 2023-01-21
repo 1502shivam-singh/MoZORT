@@ -6,22 +6,6 @@ dotenv.config()
 const api_key = process.env.API_KEY;
 
 function getDetails(index, htable, query) {
-    // console.log(htable);
-    /*
-        initial_regex = \S+(?=(.([1-2][0-9][0-9][0-9])))
-
-        regex1 = ((\S+ )*(?=((\(\d{4}\)))|(\d{4})))|(\S+(?=(.(\d{4}))))
-        regex2 = ((\S+ )+(?=(((\(\d{4}\)))|(\d{4}))))|((\S* )*(\S(?=(\[\d{4}\]))))|(\S+(?=.\d{4}))
-                sub_regex = (\S+\s)*(\S+(?=\[\d{4}\]))
-
-        regex3 = ((\S+ )+(?=(((\(\d{4}\)))|(\d{4}))))|(\S+\s)*(\S+(?=\[\d{4}\]))|(\S+(?=.\d{4}))        
-                sub_regex = (\S+(?=.\d{4}.\d))
-
-        regex4 = ((\S+\s)+(?=(((\(\d{4}\)))|(\d{4}))))|(\S+\s)*(\S+(?=\[\d{4}\]))|((\S)+(?=.\d{4}.(\d+|\w)))
-    
-        Original regex with TV Show name regex ---
-        regex = ((\S+\s)+(?=(((\(\d{4}\)))|(\d{4}))))|(\S+\s)*(\S+(?=\[\d{4}\]))|((\S)+(?=.\d{4}.(\d+|\w)))|((\S+)(?=(.S\d{2})))
-    */
    
     let genreList = [];
     // match for movie name
@@ -41,7 +25,6 @@ function getDetails(index, htable, query) {
         type = 'tv';
     }
     
-    // console.log({movieNameQuery, movieReleaseYear});
     return new Promise((resolve, reject)=>{
         https.get(`https://api.themoviedb.org/3/search/${type}?api_key=${api_key}&query=${movieNameQuery}`, (res) => {
             if (res.statusCode === 200) {
@@ -90,7 +73,6 @@ function getDetails(index, htable, query) {
             }
     
             res.on('error', (err) => {
-                // error handling
                 genreList.push({ error: err });
                 reject(err);
             });

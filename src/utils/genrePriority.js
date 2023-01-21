@@ -23,9 +23,10 @@ const genrePriority = (list) => {
     }
 
     /*
+      Find the two genres with the highest priority (least value) -
       [19, 0, 1, 20, 22, 100, 15, 5] ==> <0, 1>
       Approach 1 - find min, then min except that min - O(n), but 2 loops
-	  Approach 2 - keep track of previous minimum and next least minimum. When we get the minimum element, we also have the second minimum.
+	    Approach 2 - keep track of previous minimum and next least minimum. When we get the minimum element, we also have the second minimum.
     */
 
     let firstMin = Number.POSITIVE_INFINITY, secondMin = Number.POSITIVE_INFINITY, subGenre1 = '', subGenre2 = '';

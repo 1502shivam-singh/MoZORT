@@ -4,14 +4,23 @@ A CLI tool to reorient your movies directory, by sorting all movies as per genre
 
 - Download this repository, 
 - Add required dependencies (added below), 
-- Place it outside your movies folder, 
-- Go inside the downloaded folder and run
+- Place it one step, outside your movies directory,
 
-            node main.js ./{YOUR_MOVIES_DIRECTORY_NAME}
+            if `target` is folder containing movies
+            then place it in same directory as the `target` folder
 
-- Find your movies sorted inside "sorted_movies" folder
+- Create your API_KEY from [TMDB](https://www.themoviedb.org/settings/api) website
+- Create a .env file and add inside it 
 
-For a test run, hit `node main.js ./target` in this repo, after downloading and setting up for headstart.
+            API_KEY="{YOUR_API_KEY_HERE}"
+
+- Inside this repo, run
+
+            node main.js {YOUR_MOVIES_DIRECTORY_NAME}
+
+- Find your movies sorted inside "sorted_movies" folder inside the movie directory
+
+For a test run, move target folder outside this repo and run `node main.js ./target` in this repo (after downloading and setting up) for a headstart.
 
 ## NOTE
 
