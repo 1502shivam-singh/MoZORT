@@ -1,1 +1,0 @@
-This file contains some data that needs to be checked for data corruption when going through the node.js move operation
